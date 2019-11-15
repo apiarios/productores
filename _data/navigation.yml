@@ -1,0 +1,8 @@
+- name: Mapa
+  link: /mapa/
+#- name: Gráfico
+#  link: /grafico/
+- name: Participantes
+  link: /participantes/
+- name: Objetivos
+  link: /objetivos/
