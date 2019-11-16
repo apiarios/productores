@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Import js para las graficos -->
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+    <!-- End imports-->
+
+  </head>
+  <body>
+
+    <!-- creamos los div donde vamos a meter los graficos.
+	 el "id" lo tenemos que usar despues"
+         uno por cada grafico -->
+
+    <div id="plot_0"></div>
+    <div id="plot_1"></div>
+    <div id="plot_2"></div>
+    <div id="plot_3"></div>
+    <div id="plot_4"></div>
+
+    <!-- end divs -->
+    <!-- los scripts que hacen los graficos
+	 tienen que hacer el "fetch" al json correspondiente
+	 y en la ultima linea poner el mismo "id" del div -->
+
+    <script>
+      fetch('bokeh/json_data/encuestas/cantidad_de_trabajadores.json')
+    .then(function(response) { return response.json(); })
+    .then(function(item) { Bokeh.embed.embed_item(item, "plot_0"); })
+    </script>
+
+    <script>
+      fetch('bokeh/json_data/encuestas/diversifican.json')
+    .then(function(response) { return response.json(); })
+    .then(function(item) { Bokeh.embed.embed_item(item, "plot_1"); })
+    </script>
+
+      <script>
+      fetch('bokeh/json_data/encuestas/participan_asociacion.json')
+    .then(function(response) { return response.json(); })
+    .then(function(item) { Bokeh.embed.embed_item(item, "plot_2"); })
+        </script>
+
+    <script>
+      fetch('bokeh/json_data/encuestas/tipo_actividades.json')
+    .then(function(response) { return response.json(); })
+    .then(function(item) { Bokeh.embed.embed_item(item, "plot_3"); })
+    </script>
+
+    <script>
+      fetch('bokeh/json_data/encuestas/venta_miel.json')
+    .then(function(response) { return response.json(); })
+    .then(function(item) { Bokeh.embed.embed_item(item, "plot_4"); })
+    </script>
+
+    <!-- end scripts -->
+
+  </body>
+</html>

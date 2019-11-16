@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+
     <!-- Import js para las graficos -->
     <script src="https://cdn.bokeh.org/bokeh/release/bokeh-1.4.0.min.js"></script>
     <!-- End imports-->
-    
+
   </head>
   <body>
 
@@ -20,20 +20,20 @@
     <!-- los scripts que hacen los graficos
 	 tienen que hacer el "fetch" al json correspondiente
 	 y en la ultima linea poner el mismo "id" del div -->
-    
+
     <script>
-      fetch('/json_data/tipo_actividades_porcentual.json')
+      fetch('json_data/tipo_actividades_porcentual.json')
     .then(function(response) { return response.json(); })
     .then(function(item) { Bokeh.embed.embed_item(item, "myplot_0"); })
     </script>
-    
+
     <script>
-      fetch('/json_data/tipo_actividades.json')
+      fetch('json_data/tipo_actividades.json')
     .then(function(response) { return response.json(); })
     .then(function(item) { Bokeh.embed.embed_item(item, "myplot_1"); })
     </script>
 
     <!-- end scripts -->
-    
+
   </body>
 </html>

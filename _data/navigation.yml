@@ -1,7 +1,9 @@
 - name: Mapa
   link: /mapa/
-#- name: Gráfico
-#  link: /grafico/
+- name: Encuestas
+  link: /encuestas.html
+- name: Datos Sanitarios
+  link: /datos_sanitarios.html
 - name: Participantes
   link: /participantes/
 - name: Objetivos

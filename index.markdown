@@ -2,9 +2,9 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-title: Caracterizacion de productores apicolas y relevamiento sanitario de apiarios de l noroeste de la provincia de cordoba, como herramientas en la toma de decisiones
+title: Caracterización de productores apícolas y relevamiento sanitario de apiarios del noroeste de la provincia de Córdoba, como herramientas en la toma de decisiones
 
-subtitle: <br>Dra. Paula Melegatti
+subtitle: <br>Dra. Paula Melegatti<br>M. V. Natalia Pereyra
 
 hero_height: is-fullheight
 hide_footer: true
